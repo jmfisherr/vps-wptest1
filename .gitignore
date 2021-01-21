@@ -15,17 +15,10 @@
 # If you've added this .gitignore file in an existing repository, you may want to remove the content that should be ignored. Here is how to do that.
 # you can use a wildcard to remove all files, and then add all the files back, and then commit the updates.
 
-# $ git commit -m "Pre Cleanup"
-# $ git rm -r --cached .
-# $ git add .
-# $ git commit -m ".gitignore setup and cleaned up"
-
-
 # Ignore everything in the root except the "wp-content" directory.
 /*
 !.gitignore
 !wp-content/
-!wp-config.php
 
 # Ignore everything in the "wp-content" directory, except the "plugins"
 # and "themes" directories.
@@ -36,10 +29,9 @@ wp-content/*
 # Ignore everything in the "plugins" directory, except the plugins you
 # specify (see the commented-out examples for hints on how to do this.)
 wp-content/plugins/*
-# !wp-content/plugins/my-single-file-plugin.php
-# !wp-content/plugins/my-directory-plugin/
 
 # Ignore everything in the "themes" directory, except the themes you
 # specify (see the commented-out example for a hint on how to do this.)
 wp-content/themes/*
-# !wp-content/themes/my-theme/
+!wp-content/themes/zerif-lite/
+!wp-content/themes/zerif-lite-child/
